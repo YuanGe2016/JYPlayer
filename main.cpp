@@ -95,6 +95,7 @@ static bool associateFileTypes()
     settings.setValue(QStringLiteral("."),
                       QLatin1Char('"') + QDir::toNativeSeparators(filePath) + QStringLiteral("\" \"%1\""));
 
+    qDebug() << "settings file: " << settings.fileName();
     return true;
 }
 //! [0]
